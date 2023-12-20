@@ -4,7 +4,7 @@ power = len(s_num)
 final_ans = 0
 
 for i in s_num:
-    final_ans += pow(int(i),power)
+    final_ans += int(i) ** power
 if final_ans == num:
     print("YES")
 else:
