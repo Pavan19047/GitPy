@@ -1,16 +1,14 @@
 students = {}
-
 for i in range(3):
-    name = input()
-    score = int(input())
-    students[name] = score
+    s_name = input()
+    score = input()
+    students[s_name] = score
 
-highest_score = None
-highest_scorer = None
+highest_scorer = highest_score = None
 
 for student, score in students.items():
-    if highest_score is None or score > highest_score:
+    if highest_score == None or score > highest_score:
         highest_score = score
         highest_scorer = student
-
-print({highest_scorer: highest_score})
+highest_score_data = {highest_scorer: highest_score}
+print(highest_score_data)
